@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'nova';
+    src: url(fonte/LittleBoy.otf);
+
+
+}
+body {
+    background-image: linear-gradient(to bottom, #8767A6, #533F66);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: #a27cc5;
+}
+
+h1#principal {
+    font-family: 'nova', 'Times New Roman', Times, serif;
+    font-weight: 1em;
+    color: black;
+    text-align: center;
+}
+
+.aprendendo {
+    color: white;
+    background-color: #533F66;
+    text-align: center;
+}
+
+h2 {
+   color: #A77ECC;
+}
+
+p {
+    text-align: justify;
+}
+
+.basico {
+    color: #A77ECC;
+}
+
+.intermediario {
+    color: #ccbe7e;
+}
+
+.avancado {
+    color: #cc7e7e;
+}
