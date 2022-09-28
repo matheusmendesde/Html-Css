@@ -17,7 +17,7 @@
 }
 
 
-html body {
+body {
     min-height: 100vh;
     background-color: darkgray;
     font-family: var(--fonte1);
@@ -57,7 +57,12 @@ section {
     padding-left: 30px;
     line-height: 2em;
     font-family: 'Sriracha';
-    font-size: 3vw;
+    font-style: italic;
+    font-size: 3.5vw;
+}
+
+section > p {
+    padding-bottom: 1.5em;
 }
 
 section.normal {
@@ -68,12 +73,24 @@ section.normal {
 section.imagem {
     background-color: rgb(53, 53, 53);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.575);
 }
 
 section.imagem > p {
-    background-color: rgba(0, 0, 0, 0.575);
+    background-color: rgba(0, 0, 0, 0.336);
     display: inline-block;
+    text-shadow: 2px 1px 0px black;
     padding: 9px;
+}
+
+#img001 {
+    background: url(imagens/bruno.jpg) center top no-repeat fixed;
+    background-size: cover;
+}
+
+#img002 {
+    background: url(imagens/time.jpg) center center no-repeat fixed;
+    background-size: cover;
 }
 
 footer {
