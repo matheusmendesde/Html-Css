@@ -1,135 +1,156 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 @font-face {
-    font-family: 'android';
-    src: url(fontes/Android\ Italic.ttf);
-}
-
-
-@font-face {
-    font-family: 'droid';
+    font-family: 'Android';
     src: url(fontes/idroid.otf);
+    font-weight: normal;
 }
 
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
 
-            /* Cabeçalho */
+:root {
+  --cor0: #c5ebd6;
+  --cor1: #83e1ad;
+  --cor2: #3ddc84;
+  --cor3: #2fa866;
+  --cor4: #1a5c37;
+  --cor5: #063d1e;  
+
+  --fonte-padrao: Arial, Helvetica, sans-serif;
+  --font-destaque: 'Bebas Neue', cursive;
+  --font-android: 'Android', cursive;
+}
 
 body {
-    margin: 0px;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #53F097;
+    background-color: var(--cor0);
+    font-family: var(--fonte-padrao);
 }
 
-
-p {
-    line-height: 1.5em;
-    text-align: justify;
-    text-indent: 20px;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.26);
+.externo::after {
+    content: '\00A0\1F517';
 }
-
 
 header {
-    background-image: linear-gradient(to bottom, #4EE04C, #226121);
-    height: 100%;
-    width: 100%;
-    box-shadow: 3px 3px 7px 5px rgba(0, 0, 0, 0.384);
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+    min-height: 150px;
+    text-align: center;
+    padding-top: 30px;
 }
 
-h1 {
-    text-align: center;
+header p {
     color: white;
-    font: bolder 2.2em android, Helvetica, sans-serif;
-    padding: 25px;
-    margin: 0%;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.404);
+    font-size: 1.2em;
+    font-family: var(--fonte-padrao);
+    max-width: 500px;
+    margin: auto;
+    padding: 10px 0px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.247);
 }
 
-header > p {
-    text-align: center;
+header > h1 {
     color: white;
-    margin: 23px;
-    font-size: 1.1em;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.404);
+    font-weight: normal;
+    font-family: var(--font-destaque);
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.336);
+}
+
+nav {
+    background-color: var(--cor5);
+    padding: 10px;
+    text-align: center;
+    box-shadow: -1px 4px 6px rgba(0, 0, 0, 0.425);
 }
 
 nav > a {
-    display:inline-block;
+    padding: 10px;
     text-decoration: none;
-    font-weight: bold;
-    margin-right: 17px;
-    margin-left: 20px;
-    padding-top: 12px;
-    color: white;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.404);
+    color: var(--cor1);
+    display: inline-block;
+    transition-duration: 0.5s;
 }
 
 nav > a:hover {
-    background-color: #4ee04caf;
-    border-radius: 6px;
+    background-color: var(--cor4);
+    color: var(--cor5);
+    border-radius: 5px;
 }
 
-
-        /* Conteúdo */
-
-
-.folha {
-    box-shadow: 3px 3px 3px 5px rgba(0, 0, 0, 0.384);
-    border-radius: 5px 7px;
+main {
     margin: auto;
-    height: auto;
-    width: 746px;
+    margin-bottom: 30px;
+    padding: 20px;
+    max-width: 900px;
+    min-width: 300px;
     background-color: white;
-    padding: 7px 26px;
-    text-align: justify;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
-h2 {
-    font-family: droid, 'Courier New', Courier, monospace;
-    color: #226121;
+main h1 {
+    font-weight: normal;
     font-size: 1.8em;
+    color: var(--cor5);
+    font-family: var(--font-android);
 }
 
-.h3color {
-    font-family: droid, 'Courier New', Courier, monospace;
-    color: #226121;
-    background-image: linear-gradient(to right, #53f097c0, #e0f1e834);
+main h2 {
+    font-family: var(--font-android);
+    font-weight: normal;
+    color: var(--cor4);
+    font-size: 1.3em;
+    background-image: linear-gradient(to right, var(--cor0), transparent);
+    text-indent: 10px;
 }
 
-.destacado {
-    color: #226121;
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 2em;
 }
 
-.link {
-    color: #226121;
+main strong {
+    color: var(--cor5);
     font-weight: bold;
+}
+
+main a {
+    color: var(--cor5);
+    background-color: var(--cor1);
     text-decoration: none;
-    background-color: #4ee04c80;
+    font-weight: bold;
+    padding: 2px 5px;
 }
 
-.link:hover {
+main a:hover {
     text-decoration: underline;
+    color: var(--cor4);
 }
 
-.maldito {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+main img {
+    width: 100%;
 }
 
-div#android {
-    text-align: center;
+main img.pequena {
+    max-width: 350px;
+    display: block;
+    margin: auto;
 }
 
 .video {
+    background-color: var(--cor5);
+    margin: 30px -20px;
     position: relative;
-    background-color: #226121;
-    height: 0px;
-    margin-left: -26px;
-    margin-right: -26px;
-    margin-bottom: 15px;
-    padding-bottom: 59%;
+    padding-bottom: 56.25%;
 }
 
 .video > iframe {
@@ -140,39 +161,40 @@ div#android {
     height: 90%;
 }
 
-        /* RODAPÉ */
-
-span > h4 {
-    background-color: #4EE04C;
-    color: white;
-    padding: 8px;
-    border-radius: 4px 1px;
-}
-
-.direita {
-    list-style-type: '\2714\0020\0020';
-    columns: 2;
-    list-style-position: inside;
-}
-
-.rodape{
-    margin-top: -22px;
-    background-color: #53f097b7;
-    border-radius: 9px 1px;
+aside {
+    background-color: var(--cor1);
+    border-radius: 5px;
     padding: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.397);
 }
 
-.rodape > ul {
-    text-decoration: underline;
-    font-weight: 600;
+aside ul {
+    list-style-position: inside;
+    list-style-type: '\2714\00A0\00A0';
+    columns: 2;
 }
 
-
-#ultimo {
-    height: auto;
-    width: auto;
-    margin-bottom: -20px;
-    text-align: center;
-    background-color: #226121;
+aside h3 {
+    background-color: var(--cor4);
     color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+footer {
+    background-color: var(--cor5);
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+footer a {
+    color: white;
+    font-weight: bolder;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--cor1);
 }

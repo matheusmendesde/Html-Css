@@ -1,0 +1,115 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
+
+body {
+    height: 100vh;
+    background-color: darkgray;
+    font-family: var(--fonte1);
+}
+
+header {
+    margin: auto;
+    padding-top: 50px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    font-family: var(--fonte2);
+    text-align: center;
+    font-size: 9vw;
+    font-weight: 700;
+    font-variant: small-caps;
+}
+
+header > p {
+    font-family: var(--fonte1);
+    padding-bottom: 50px;
+}
+
+header a {
+    color: white;
+    font-weight: bold;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+.normal {
+    background-color: white;
+    font-style: italic;
+    font-weight: 500;
+    font-size: max(15px, 3vw);
+    padding: 20px;
+    line-height: 3em;
+    padding-top: 61px;
+    padding-bottom: 77px;
+}
+
+.imagem {
+    font-family: var(--fonte1);
+    font-style: italic;
+    font-weight: 500;
+    font-size: max(15px, 3vw);
+    color: white;
+    padding: 20px;
+    line-height: 1.7em;
+    padding-top: 50px;
+    background: url(imagens/background001.jpg) center right no-repeat fixed;
+    height: 100vh;
+    background-size: cover;
+    box-shadow: inset 0 0 10px 10px rgba(0, 0, 0, 0.342);
+}
+
+.imagem > p {
+    font-family: var(--fonte1);
+    font-weight: lighter;
+    font-size: max(15px, 3vw);
+    line-height: 2em;
+    display: inline-block;
+    padding: 20px 5px;
+    background-color: rgba(0, 0, 0, 0.466);
+    text-shadow: 1px 2px 2px rgb(0 0 0 / 99%);
+}
+
+.imagem2 {
+    font-family: var(--fonte1);
+    font-style: italic;
+    font-weight: 500;
+    font-size: max(15px, 3vw);
+    color: white;
+    padding: 20px;
+    line-height: 1.7em;
+    padding-top: 50px;
+    background: url(imagens/background002.jpg) center right no-repeat fixed;
+    height: 100vh;
+    background-size: cover;
+    box-shadow: inset 0 0 10px 10px rgba(0, 0, 0, 0.342);
+}
+
+.imagem2 > p {
+    font-family: var(--fonte1);
+    font-weight: lighter;
+    font-size: max(15px, 3vw);
+    line-height: 2em;
+    display: inline-block;
+    padding: 20px 5px;
+    background-color: rgba(0, 0, 0, 0.466);
+    text-shadow: 1px 2px 2px rgb(0 0 0 / 99%);
+}
