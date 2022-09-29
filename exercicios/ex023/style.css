@@ -1,0 +1,32 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    margin: auto;
+    padding: 10px;
+}
+
+table {
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+
+td {
+    border: 1px solid black ;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.numero {
+    text-align: right;
+}
