@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+    <h1>Teste de Formulario</h1>
+    <form action="" method="get" autocomplete="on">
+        <p>
+            <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome" required minlength="5" maxlength="12" size="20" placeholder="min 5 caracteres" autocomplete="username">
+        </p>
+
+        <p>
+            <label for="inota">Nota:</label>
+            <input type="number" name="nota" id="inota" required min="0" max="10" step="0.1" placeholder="0 a 10" >
+        </p>
+
+        <p>
+            <label for="ihora">Horario da Prova:</label>
+            <input type="time" name="hora" id="ihora">
+        </p>
+
+        <p>
+            <label for="idata">Dia da Prova:</label>
+            <input type="date" name="data" id="idata">
+        </p>
+
+        <p>
+            <input type="submit" value="ENVIAR">
+        </p>
+        
+    </form>
+</body>
+</html>
