@@ -10,6 +10,37 @@
     <h1>Teste de formulario</h1>
     <form action="" method="get">
 
+        <label for="iest">Estado:</label>
+        <select name="estado" id="iest">
+            <optgroup label="Região Sudeste">
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="MS">Minas Gerais</option>
+                <option value="SP">São Paulo</option>
+            </optgroup>
+
+            <optgroup label="Região Sul">
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="PR">Parána</option>
+            </optgroup>
+        </select>
+
+        <p>
+            <label for="iprof">Profissão:</label>
+            <input type="text" name="prof" id="iprof" list="listprof">
+            <datalist id="listprof">
+                <option value="ADM">Administrador</option>
+                <option value="COZ">Cozinheiro</option>
+                <option value="DEV">Desenvolvedor</option>
+                <option value="FAX">Faxineira</option>
+            </datalist>
+        </p>
+
+        <div>
+            <label for="imsg">Mensagem:</label> <br>
+            <textarea name="msg" id="imsg" cols="30" rows="5"></textarea>
+        </div>
+
         <p>
             <input type="submit" value="ENVIAR">
             <input type="reset" value="LIMPAR">
