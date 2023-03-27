@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+/* Estilos para tela normal */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+header {
+    background-color: gray;
+}
+
+header h1 {
+    text-align: center;
+    padding: 10px 0;
+}
+
+menu ul {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: blue;
+    background-color: brown;
+    text-align: center;
+}
+
+menu li {
+    background-color: darkcyan;
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    
+}
+
+article {
+    padding-top: 10px;
+    text-align: justify;
+    width: 500px;
+    margin: auto;
+}
